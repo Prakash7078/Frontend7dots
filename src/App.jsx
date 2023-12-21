@@ -9,8 +9,8 @@ import 'react-circular-progressbar/dist/styles.css';
 
 const App = () => {
   // const [key, setKey] = useState(0); // Key to force reset the countdown
-  const [time, setTime] = useState(0);
-  const [isPaused, setIsPaused] = useState(true);
+  const [time, setTime] = useState(60);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     let interval;
