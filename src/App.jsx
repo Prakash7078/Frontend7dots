@@ -35,7 +35,7 @@ const App = () => {
   };
 
   const addTime = () => {
-    setTime((prevTime) => (prevTime + 10) % 60); // Add 10 seconds to the current time
+    setTime((prevTime) => (prevTime + 10) > 60 ? 60: prevTime+10); // Add 10 seconds to the current tim
     setIsPaused(false);
   };
 
